@@ -1,2 +1,1 @@
-# copilot
-Complete Guide to GitHub Copilot for Developers (Video)
+# Complete Guide to GitHub Copilot for Developers (Video)
