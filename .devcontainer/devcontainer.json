@@ -1,0 +1,16 @@
+{
+  "name": "Python Development",
+  "image": "python:3.9",
+  "extensions": [
+    "github.vscode-pull-request-github",
+    "github.copilot",
+    "github.vscode-theme-github",
+    "github.vscode-yaml"
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    "python.formatting.provider": "black"
+  },
+  "forwardPorts": [8000],
+  "postCreateCommand": "pip install -r requirements.txt"
+}
