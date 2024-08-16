@@ -1,16 +1,35 @@
 {
-  "name": "Python Development",
-  "image": "python:3.9",
-  "extensions": [
-    "github.vscode-pull-request-github",
-    "github.copilot",
-    "github.vscode-theme-github",
-    "github.vscode-yaml"
-  ],
-  "settings": {
-    "python.pythonPath": "/usr/local/bin/python",
-    "python.formatting.provider": "black"
-  },
-  "forwardPorts": [8000],
-  "postCreateCommand": "pip install -r requirements.txt"
+    "name": "GitHub Copilot DevContainer",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu", 
+    "features": {
+        "ghcr.io/devcontainers/features/github-copilot:1": {},
+        "ghcr.io/devcontainers/features/github-copilot-chat:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",            // GitHub Copilot
+                "GitHub.copilot-chat",       // GitHub Copilot Chat
+                "ms-vscode.powershell",      // PowerShell
+                "ms-azuretools.vscode-bicep",// Bicep
+                "msazurermtools.azurerm-vscode-tools", // ARM Tools
+                "ms-python.python",          // Python
+                "vscode-icons-team.vscode-icons", // VSCode Icons
+                "GitHub.github-vscode-theme" // GitHub Color Theme
+            ]
+        }
+    },
+    "settings": {
+        "workbench.colorTheme": "GitHub Dark Default",
+        "workbench.iconTheme": "vscode-icons",
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.fontSize": 14,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000
+    },
+    "postCreateCommand": "python3 -m pip install --upgrade pip",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "remoteUser": "vscode"
 }
