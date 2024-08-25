@@ -1,3 +1,23 @@
+# Tim's stuff
+# Ignore node_modules in the node-app directory
+/node-app/node_modules/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
