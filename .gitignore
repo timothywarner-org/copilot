@@ -180,3 +180,20 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+data-visualization/myenv/Scripts/activate.bat
+data-visualization/myenv/pyvenv.cfg
+data-visualization/myenv/Scripts/Activate.ps1
+data-visualization/myenv/Scripts/deactivate.bat
+data-visualization/myenv/Scripts/f2py.exe
+data-visualization/myenv/Scripts/fonttools.exe
+data-visualization/myenv/Scripts/numpy-config.exe
+data-visualization/myenv/Scripts/pip.exe
+data-visualization/myenv/Scripts/pip3.11.exe
+data-visualization/myenv/Scripts/pip3.exe
+data-visualization/myenv/Scripts/pyftmerge.exe
+data-visualization/myenv/Scripts/pyftsubset.exe
+data-visualization/myenv/Scripts/python.exe
+data-visualization/myenv/Scripts/pythonw.exe
+data-visualization/myenv/Scripts/ttx.exe
+data-visualization/myenv/share/man/man1/ttx.1
+data-visualization/myenv/Scripts/activate
