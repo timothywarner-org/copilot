@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # Python dependencies
+  - package-ecosystem: "pip"
+    directories:
+      - "/examples/*/"  # This will scan all immediate subdirectories under /examples
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      python-packages:
+        patterns:
+          - "*"  # Group all Python updates together
+
+  # Node.js dependencies
+  - package-ecosystem: "npm"
+    directories:
+      - "/examples/*/"  # This will scan all immediate subdirectories under /examples
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      node-packages:
+        patterns:
+          - "*"  # Group all Node.js updates together

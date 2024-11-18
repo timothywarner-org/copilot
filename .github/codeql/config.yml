@@ -1,0 +1,18 @@
+paths:
+  - examples
+paths-ignore:
+  - '**/test/**'
+  - '**/tests/**'
+  - '**/*.test.js'
+  - '**/*.spec.js'
+  - '**/*.test.py'
+  - '**/*.spec.py'
+
+queries:
+  - uses: security-and-quality
+
+query-filters:
+  - exclude:
+      problem.severity:
+        - warning
+        - recommendation 
