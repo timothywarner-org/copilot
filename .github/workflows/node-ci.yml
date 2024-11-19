@@ -1,10 +1,10 @@
 name: Build, Test, and Deploy Node.js App
 
 on:
-  push:
+ # push:
     branches:
       - main
-
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
