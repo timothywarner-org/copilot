@@ -1,17 +1,17 @@
 name: Check README Links
 
 on:
-  push:
-    paths:
-      - '**/*.md'
-      - '.github/workflows/readme-links-checker.yml'
-  pull_request:
-    paths:
-      - '**/*.md'
-      - '.github/workflows/readme-links-checker.yml'
+  # push:
+  #   paths:
+  #     - '**/*.md'
+  #     - '.github/workflows/readme-links-checker.yml'
+  # pull_request:
+  #   paths:
+  #     - '**/*.md'
+  #     - '.github/workflows/readme-links-checker.yml'
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * 1'  # Run weekly on Mondays
+  # schedule:
+  #   - cron: '0 0 * * 1'  # Run weekly on Mondays
 
 permissions:
   contents: read
