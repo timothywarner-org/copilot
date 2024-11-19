@@ -36,7 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Create Issue on Failure
-        if: env.lychee_exit_code != 0
+        if: failure()
         uses: peter-evans/create-issue-from-file@v5
         with:
           title: Link Checker Report
