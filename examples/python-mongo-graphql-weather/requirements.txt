@@ -1,0 +1,6 @@
+Flask
+Flask-GraphQL
+graphene
+pymongo
+pytest
+requests

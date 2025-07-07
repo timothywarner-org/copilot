@@ -6,3 +6,5 @@ function fizzBuzz() {
     console.log(output || i);
   }
 }
+
+fizzBuzz();
